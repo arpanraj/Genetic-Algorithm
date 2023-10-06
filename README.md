@@ -35,24 +35,30 @@ performing the following functions:
 • Pick a random spot for crossover, and breed two new children (with fitness computed).
 • Randomly decide whether to mutate based on MutationPct, and if so, mutate one gene.
 • Generate a sufficient number of children to keep the population size constant.
+
 Determining fitness: There are several plausible fitness functions that you can use for this problem –
 please devise your own and thoroughly describe the fitness function that you are using in your
 assignment write-up. Suggestion: Determine the maximum number of distinct pairs of queens that can
 be mutually attacking at any one time and define your fitness function in terms of this quantity.
+
 Selection of parents: One natural way to determine the probability of selecting a particular parent
 from the general population is to use a “normalized fitness” calculation, e.g.:
 Where si denotes the selection probability of the ith element of the population; similarly, fi denotes the
 fitness of the ith element.
+
+<img width="169" alt="Screenshot 2023-10-06 at 1 59 38 AM" src="https://github.com/arpanraj/Genetic-Algorithm/assets/38219415/b44f40e6-3ca0-4241-9ef1-5d113c420644">
 
 (*) For a stopping condition, you can use a fixed number of generations, or an average fitness criterion.
 What to Hand In
 After you’ve written the program, it is up to you to experiment with population size and number of
 iterations that produces good results. Since not very much happens in a single iteration, you may need
 a very large number to get a good result, but that is what you will determine.
+
 What to hand in: Include an electronic version of your code with instructions on how to compile and run
 it. Please include a short writeup summarizing your findings, technique and conclusions that you reached;
 be specific about the parameters used for your GA, including the fitness function and mutation; feel free
 to compare and contrast results using different fitness functions and mutation values.
+
 (*) In your write-up include a plot (as seen in lecture) of the average fitness (vertical axis) to population
 generation number (horizontal axis).
 (*) Include several explicit examples of individuals sampled from different generations of the
